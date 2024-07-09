@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         console.log('Tabs:', tabs);
         const tabId = tabs[0].id;
@@ -55,5 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
 
 
